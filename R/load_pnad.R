@@ -1,4 +1,4 @@
-#' Function to download PNAD (people) data
+#' @description  Returns a tibble with PNAD data (people) for the requested year.
 #' @author Marcos Júnio Ribeiro
 #' @param year: Year for which you want to download PNAD
 #'
@@ -29,8 +29,6 @@ load_pnad = function(year){
 
   read_rds( url(link2) )
 }
-
-
 
 
 
