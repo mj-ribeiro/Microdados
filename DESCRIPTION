@@ -1,0 +1,11 @@
+Package: Microdados
+Type: Package
+Title: Microdados Brasil
+Version: 0.1.0
+Author: Marcos Júnio Ribeiro
+Maintainer: Marcos Júnio Ribeiro <mjribeiro@usp.br>
+Description: This package provides PNAD dataset (people) from 2002 to 2015 (except 2010).
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
