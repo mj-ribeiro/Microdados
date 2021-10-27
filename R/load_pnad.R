@@ -1,18 +1,16 @@
-#' @description  Returns a tibble with PNAD data (people) for the requested year.
+#' @title Pnad download
+#' @description  Returns a tibble with PNAD data for the requested year.
 #' @author Marcos Júnio Ribeiro
 #' @param year: Numeric (Positive) year for which you want to download PNAD.
 #' @param type: A character string (pessoas or domicilios) that indicates which PNAD do you want.
 #'
 #' @examples
-#' load_pnad(2002, type='pessoas') # returns PNAD pessoas 2002
-#' load_pnad(2015, type = 'domicilios') # returns PNAD domicilios 2015
+#' load_pnad(2002, type='pessoas') # returns PNAD pessoas 2002.
+#' load_pnad(2015, type = 'domicilios') # returns PNAD domicilios 2015.
 #'
-
-`%notin%` <- Negate(`%in%`)
-
-
 #' @exports
 load_pnad = function(year, type){
+
   if(curl::has_internet()==FALSE){
     stop('There is no internet connection. Try again later!')
   }
@@ -56,6 +54,4 @@ load_pnad = function(year, type){
   }
 
 }
-
-
 
