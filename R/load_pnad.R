@@ -7,7 +7,6 @@
 #' @examples
 #' load_pnad(2002, type='pessoas') # returns PNAD pessoas 2002.
 #' load_pnad(2015, type = 'domicilios') # returns PNAD domicilios 2015.
-#'
 #' @exports
 load_pnad = function(year, type){
 
@@ -32,24 +31,25 @@ load_pnad = function(year, type){
   # pessoas ----
   if(type == 'pessoas'){
 
-  link = 'https://github.com/mj-ribeiro/PNAD/raw/main/'
-  link2 = paste(link, "pnad-", year, '.rds', sep = '')
+    link = 'https://github.com/mj-ribeiro/PNAD/raw/main/'
+    link2 = paste(link, "pnad-", year, '.rds', sep = '')
 
-  print("Okay, your PNAD pessoas is downloading!")
+    print("Okay, your PNAD pessoas is downloading!")
 
-  read_rds( url(link2) )
+    readRDS( url(link2) )
+
   }
 
   # domicílios ----
 
   else if(type == 'domicilios'){
 
-  link = 'https://github.com/mj-ribeiro/PNAD/raw/main/'
-  link2 = paste(link, "dom", year, '.rds', sep = '')
+    link = 'https://github.com/mj-ribeiro/PNAD/raw/main/'
+    link2 = paste(link, "dom", year, '.rds', sep = '')
 
-  print("Okay, your PNAD domicílios is downloading!")
+    print("Okay, your PNAD domicílios is downloading!")
 
-  read_rds( url(link2) )
+    readRDS( url(link2) )
 
   }
 
