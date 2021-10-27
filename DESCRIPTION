@@ -4,7 +4,7 @@ Title: Microdados Brasil
 Version: 0.1.0
 Author: Marcos Júnio Ribeiro
 Maintainer: Marcos Júnio Ribeiro <mjribeiro@usp.br>
-Description: This package provides PNAD dataset (pessoas e domicilios) from 2002 to 2015 (except 2010).
+Description: This package provides PNAD dataset (pessoas e domicilios) from 1992 to 2015 (except 1994, 2000 and 2010).
 License: MIT
 Encoding: UTF-8
 LazyData: true

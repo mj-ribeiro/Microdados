@@ -7,6 +7,7 @@
 #' @examples
 #' load_pnad(2002, type='pessoas') # returns PNAD pessoas 2002.
 #' load_pnad(2015, type = 'domicilios') # returns PNAD domicilios 2015.
+#' load_pnad(1993, type = 'domicilios') # returns PNAD domicilios 1993.
 #' @exports
 load_pnad = function(year, type){
 
@@ -20,12 +21,12 @@ load_pnad = function(year, type){
 
   year = year
 
-  if(year>2015 | year<2002){
+  if(year>2015 | year<1992){
     stop("This package doesn't provide PNAD to this year. Try again!")
   }
 
-  if(year==2010){
-    stop('PNAD is not available to 2010. Try again!')
+  if(year%in%c(1994, 2000, 2010)){
+    stop('PNAD is not available to 1994, 2000, 2010. Try again!')
   }
 
   # pessoas ----

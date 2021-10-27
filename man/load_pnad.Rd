@@ -17,6 +17,7 @@ Returns a tibble with PNAD data for the requested year.
 \examples{
 load_pnad(2002, type='pessoas') # returns PNAD pessoas 2002.
 load_pnad(2015, type = 'domicilios') # returns PNAD domicilios 2015.
+load_pnad(1993, type = 'domicilios') # returns PNAD domicilios 1993.
 }
 \author{
 Marcos Júnio Ribeiro
