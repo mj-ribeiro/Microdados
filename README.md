@@ -22,6 +22,16 @@ devtools::install_github("mj-ribeiro/Microdados")
 library('Microdados')
 ```
 
+If you receive this error: "system error 267, O nome do diretório é inválido", or something similar try the following code:
+
+```
+install.packages("remotes")
+Sys.setenv(R_REMOTES_STANDALONE="true")
+remotes::install_github("mj-ribeiro/Microdados" )
+library('Microdados')
+```
+
+
 ### Examples
 
 ```
